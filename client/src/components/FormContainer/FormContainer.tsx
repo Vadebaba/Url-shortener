@@ -27,7 +27,7 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = (props) => {
     };
     return (
         <div className='container mx-auto p-2'>
-            <div className="bg-[url('/src/assets/bkkrag.jpg')]" my-8 rounded-xl bg-cover bg-center>
+            <div className="bg-[url('/src/assets/bkkrag.jpg')] my-8 rounded-xl bg-cover bg-center">
 
                 <div className='w-full h-full rounded-xl p-20 backdrop-brightness-100'>
                     <h2 className='text-white text-4xl text-center pb-4'>Paste your untidy link here.</h2>
