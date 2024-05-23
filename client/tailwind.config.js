@@ -7,11 +7,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        banner: "url('./src/assets/bkkrag.jpg')",
+        banner: "url('/src/assets/bkkrag.jpg')",
       },
     },
   },
   plugins: [],
 };
-
 
