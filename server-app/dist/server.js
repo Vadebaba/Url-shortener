@@ -20,5 +20,5 @@ app.use((0, cors_1.default)({
 }));
 app.use("/api/", shortUrl_1.default);
 app.listen(port, () => {
-    console.log(`Server started successfully on port: ${port}`);
+    console.log(`Server running on port: ${port}`);
 });
