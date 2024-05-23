@@ -34,7 +34,7 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = (props) => {
 
                     <p className='text-white text-center pb-2 text-xl font-extralight'>
                     Free tool to shorten a url or reduce link,
-                        use our URL shortner to create a shortened
+                        use our URL shortener to create a shortened
                         & neat link making it easy to use. 
                     </p>
 
@@ -47,7 +47,7 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = (props) => {
                                 <input type="text"
                                     placeholder='Add your link'
                                     required
-                                    className='block w-full p-4 ps-32 text-sm
+                                    className='block w-full p-4 ps-8 text-sm
                                      text-gray-900 border border-gray-300 rounded-[33rem]
                                       bg-white focus:ring-blue-500 focus:border-blue-500'
                                     value={fullUrl}
@@ -55,7 +55,7 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = (props) => {
                                         setfullUrl(e.target.value)
                                     }
                                 />
-                                <button type='submit' className='absolute top-0 end-0 p-2.5 text-sm 
+                                <button type='submit' className='absolute top-0 end-0 p-4 text-sm 
                                 font-medium h-full text-white bg-blue-700 rounded-[33rem] border
                                  border-blue-700 focus:ring-4 focus:outline-none 
                                  focus:ring-blue-300'>Shorten Url</button>
