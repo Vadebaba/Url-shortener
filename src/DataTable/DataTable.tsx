@@ -33,9 +33,9 @@ const DataTable: React.FunctionComponent<IDataTableProps> = (props) => {
                         </Link>
                     </td>
 
-                    <td className='px-6 py-3'>{item.clicks} </td>
+                    <td className='px-6 py-3 relative pr-6'>{item.clicks} </td>
                     <td className='px-6 py-3'>
-                        <div className="flex content center">
+                        <div className="flex relative right-[15px] content center focus:pb-[1px]">
                             <div className="cursor-pointer px-2"
                                 onClick={() => copyToClipboard(item.shortUrl)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
@@ -51,7 +51,7 @@ const DataTable: React.FunctionComponent<IDataTableProps> = (props) => {
                                 </svg>
                             </div>
 
-                            <div className="cursor-pointer px-2 "
+                            <div className="cursor-pointer px-2 focus:pb-[1px]"
                                 onClick={() => deleteUrl(item._id)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                                     stroke="currentColor" className="w-6 h-6 fill-red-600">
@@ -94,16 +94,16 @@ const DataTable: React.FunctionComponent<IDataTableProps> = (props) => {
                 <table className='w-full table-fixed text-sm text-left rtl:text-right text-gray-500'>
                     <thead className='text-md uppercase text-gray-50 bg-gray-700'>
                         <tr>
-                            <th scope='col' className='px-6 py-3 w-6/12'>
+                            <th scope='col' className='px-4 py-3 w-[30%]'>
                                 FullUrl
                             </th>
-                            <th scope='col' className='px-6 py-3 w-3/12'>
+                            <th scope='col' className='px-4 py-3 w-[25%]'>
                                 ShortUrl
                             </th>
-                            <th scope='col' className='px-6 py-3'>
+                            <th scope='col' className='px-4 py-3'>
                                 Clicks
                             </th>
-                            <th scope='col' className='px-6 py-3'>
+                            <th scope='col' className='px-4 py-3'>
                                 Action
                             </th>
                         </tr>

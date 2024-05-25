@@ -45,20 +45,20 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = (props) => {
                         <div className='flex'>
                             <div className='relative w-full'>
                                 <input type="text"
-                                    placeholder='Add your link'
+                                    placeholder='Add your link...'
                                     required
-                                    className='block w-full p-4 ps-8 text-sm
-                                     text-gray-900 border border-gray-300 rounded-[33rem]
-                                      bg-white focus:ring-blue-500 focus:border-blue-500'
+                                    className='block w-full p-[10px] xs:p-4 ps-1 lg:ps-6 text-sm 
+                                     text-gray-900 border focus:ring-blue-500 rounded-[5rem]
+                                      bg-white focus:border-blue-500 border-gray-300 '
                                     value={fullUrl}
                                     onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                                         setfullUrl(e.target.value)
                                     }
                                 />
-                                <button type='submit' className='absolute top-0 end-0 p-4 text-sm 
-                                font-medium h-full text-white bg-blue-700 rounded-[33rem] border
-                                 border-blue-700 focus:ring-4 focus:outline-none 
-                                 focus:ring-blue-300'>Shorten Url</button>
+                                <button type='submit' className='absolute top-0 end-0 px-3 py-3 
+                                text-sm xs:px-8 xs:py-4 
+                                font-medium h-full text-white bg-blue-700 rounded-[5rem]
+                                 hover:bg-blue-800 focus:pb-[1px]'>Create Url</button>
                             </div>
                         </div>
                     </form>
