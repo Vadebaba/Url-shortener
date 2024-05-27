@@ -48,7 +48,7 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = (props) => {
                                     placeholder='Add your link...'
                                     required
                                     className='block w-full p-[10px] xs:p-4 ps-1 lg:ps-6 text-sm 
-                                     text-gray-900 border focus:ring-blue-500 rounded-[5rem]
+                                     text-gray-900 border focus:ring-blue-500 rounded-[1rem]
                                       bg-white focus:border-blue-500 border-gray-300 '
                                     value={fullUrl}
                                     onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
@@ -57,8 +57,11 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = (props) => {
                                 />
                                 <button type='submit' className='absolute top-0 end-0 px-3 py-3 
                                 text-sm xs:px-8 xs:py-4 
-                                font-medium h-full text-white bg-blue-700 rounded-[5rem]
-                                 hover:bg-blue-800 focus:pb-[1px]'>Click</button>
+                                font-medium h-full text-white bg-blue-700 rounded-[1rem]
+                                 hover:bg-blue-800 focus:pb-[1px] '>
+                                    Click
+                                    </button>
+
                             </div>
                         </div>
                     </form>
